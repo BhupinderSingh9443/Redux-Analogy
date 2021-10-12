@@ -1,0 +1,9 @@
+.border-1{
+    border:4px black solid;
+    box-shadow: 5px 5px 5px #ccc;
+    margin: 0.25rem 1.50rem 1.50rem !important ;    
+}
+
+.margin{
+    margin-left: 15px;
+}
