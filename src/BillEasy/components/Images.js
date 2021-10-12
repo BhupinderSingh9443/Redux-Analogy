@@ -12,7 +12,9 @@ const Images = () => {
     setImages(response.data);
   };
 
-  fetchImages();
+  useEffect(() => {
+    fetchImages();
+  });
 
   const renderImages = () =>
     images.map((image) => (
