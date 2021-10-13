@@ -16,18 +16,13 @@ const Images = () => {
     fetchImages();
   }, []);
 
-  console.log(images);
-
   const renderImages = () =>
     images.map((image) => (
-      <div className="margin">
+      <div className="margin" key={image.id}>
         <Image
-          key={image.id}
           alt="No-Image"
           src={image.urls.regular}
           width={200}
-          preview="true"
-          visible="true"
           className="border-1 "
         ></Image>
       </div>
