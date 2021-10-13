@@ -23,7 +23,7 @@ const Images = () => {
           alt="No-Image"
           src={image.urls.regular}
           width={200}
-          className="border-1 "
+          className="border-1"
         ></Image>
       </div>
     ));
