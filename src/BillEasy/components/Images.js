@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Spin } from "antd";
-
+import { Image } from "antd";
 import Mocky from "../axios/Mocky";
 import "../styles/style.css";
 
@@ -14,27 +14,34 @@ const Images = () => {
 
   useEffect(() => {
     fetchImages();
-  });
+  }, []);
+
+  console.log(images);
 
   const renderImages = () =>
     images.map((image) => (
-      <img
-        key={image.id}
-        className=" ui image border-1 "
-        alt="Woops"
-        src={image.urls.small}
-      ></img>
+      <div className="margin">
+        <Image
+          key={image.id}
+          alt="No-Image"
+          src={image.urls.regular}
+          width={200}
+          preview="true"
+          visible="true"
+          className="border-1 "
+        ></Image>
+      </div>
     ));
 
   if (!images.length) {
     return (
-      <div className="example">
+      <div className="Loader">
         <Spin />
       </div>
     );
   }
 
-  return <div className="ui small images bodered">{renderImages()}</div>;
+  return <div className="flex-container">{renderImages()}</div>;
 };
 
 export default Images;

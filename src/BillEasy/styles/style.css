@@ -1,9 +1,17 @@
 .border-1{
     border:4px black solid;
     box-shadow: 5px 5px 5px #ccc;
-    margin: 0.25rem 1.50rem 1.50rem !important ;    
+ 
+}
+
+.flex-container{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .margin{
-    margin-left: 15px;
+    margin:20px;
 }
