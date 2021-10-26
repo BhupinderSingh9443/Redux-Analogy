@@ -21,7 +21,7 @@ Definately an over kill.
 
 Inspiration
 
-Lot of code pattern here is induced from various mentors like Stpehen Grider who have guided me thorugout my learning experience. Basic fundamentals like code re-usability, Busines and presentation logic and much more are well taught throughout their online courses.
+Lot of code pattern here is induced from various mentors like Stpehen Grider who have guided me throughout my learning experience. Basic fundamentals like code re-usability, Busines and presentation logic and much more are well taught throughout their online courses.
 
 
 
